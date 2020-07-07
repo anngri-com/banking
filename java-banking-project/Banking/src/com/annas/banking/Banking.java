@@ -46,6 +46,8 @@ public class Banking {
 		}	
 	}
 	
+	
+
 	public void userProfileOptions() {
 		System.out.println("Welcome " + mainUser.getFirstName() + "!");
 		System.out.println("Please, choose from the following options:");
@@ -63,11 +65,14 @@ public class Banking {
 			
 			String option = console.readLine();
 			if(option.equals("1")) {
-				
+				mainUser.userInformation();
 			}
 		}
-		
 	}
+	
+	
+	
+	
 	
 	
 	

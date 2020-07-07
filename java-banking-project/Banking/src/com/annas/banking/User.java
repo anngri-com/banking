@@ -17,6 +17,16 @@ public class User {
 		  this.email = email;
 	  }
 
+	
+	public void userInformation() {
+		System.out.println("Name: " + this.firstName + this.lastName);
+		System.out.println("Email address: " + this.email);
+	}
+	
+	
+	
+	
+	
 	public int getUserId() {
 		return userId;
 	}
@@ -64,13 +74,6 @@ public class User {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	
-	
-	public void userInformation() {
-		System.out.println("")
-	}
-	
-	
 	
 	
 	}

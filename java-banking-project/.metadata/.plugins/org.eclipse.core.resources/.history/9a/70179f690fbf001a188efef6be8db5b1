@@ -1,0 +1,16 @@
+package com.annas.banking;
+
+
+
+
+
+public class Banking {
+	public static void main(String...args) {
+		System.out.println("Welcome to Anna's Bank");
+		System.out.println("Please, choose from thw following options:");
+		System.out.println("1. Log In to your Account");
+		System.out.println("2. Create a new Account");
+		String option = System.console().readLine("");
+	}
+
+}

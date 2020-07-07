@@ -1,0 +1,34 @@
+package com.annas.banking;
+
+import java.io.Console;
+
+public class Banking {
+	
+	private static void print(String text) {
+		System.out.println(text);
+	}
+	
+	public void welcomeMessage() {
+		System.out.println("Welcome to Anna's Bank");
+		System.out.println("Please, choose from thw following options:");
+		System.out.println("1. Log In to your Account");
+		System.out.println("2. Create a new Account");
+	}
+	
+	public static void main(String...args) {
+		
+		Banking bank = new Banking();
+		bank.welcomeMessage();
+		
+		Console console = System.console();
+		String option = console.readLine("");
+		
+		if(option.equals("2")) {
+			System.out.println("New Account Registration");
+			String login = console.readLine("Enter your Login:");
+			String password = console.readLine("Enter your password:");
+		} 
+		
+	}
+
+}

@@ -1,0 +1,5 @@
+package com.annas.banking;
+
+public class User {
+
+}

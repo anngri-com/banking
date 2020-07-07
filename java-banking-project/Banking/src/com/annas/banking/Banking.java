@@ -22,10 +22,13 @@ public class Banking {
 	
 	public void registerNewAccount() {
 		System.out.println("New Account Registration");
+		String firstName = console.readLine("Enter your first name");
+		String lastName = console.readLine("Enter your last name");
+		String email = console.readLine("Enter your email addres");
 		String login = console.readLine("Enter your Login:");
 		String password = console.readLine("Enter your password:");
 		
-		mainUser = new User(login, password);
+		mainUser = new User(login, password, firstName, lastName, email);
 		console.readLine("New Account ceated. Press enter to continue.");
 	}
 	public void userLogIn() {
@@ -34,12 +37,36 @@ public class Banking {
 		
 		if(login.equals(mainUser.getUsername()) && password.equals(mainUser.getPassword())) {
 			
-			System.out.println("Welcome " + mainUser.getFirstName() + "!");
+			mainPage();
+			
 		}
 		
 		else {
 			console.readLine("Sorry, wrong password. Press enter to continue");
 		}	
+	}
+	
+	public void userProfileOptions() {
+		System.out.println("Welcome " + mainUser.getFirstName() + "!");
+		System.out.println("Please, choose from the following options:");
+		System.out.println("1. Account Information");
+		System.out.println("2. Update Personal Information");
+		System.out.println("3. Transfer");
+		System.out.println("4. Deposit");
+		System.out.println("5. Withdrawal");
+		console.readLine();
+	}
+	
+	public void mainPage() {
+		while(true) {
+			userProfileOptions();
+			
+			String option = console.readLine();
+			if(option.equals("1")) {
+				
+			}
+		}
+		
 	}
 	
 	
@@ -63,10 +90,13 @@ public class Banking {
 			if(option.equals("3")) {
 				return;
 			}
-			
-			
-			
 		}
+		
+		
+		
+		
+		
+		
 		
 	}
 

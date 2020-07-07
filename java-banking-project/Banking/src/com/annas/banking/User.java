@@ -9,9 +9,12 @@ public class User {
 	  private String email; // not null
 	  //private Role role;
 	  
-	  public User(String login, String password) {
+	  public User(String login, String password, String firstName, String lastName, String email) {
 		  this.username = login;
 		  this.password = password;
+		  this.firstName = firstName;
+		  this.lastName = lastName;
+		  this.email = email;
 	  }
 
 	public int getUserId() {
@@ -61,5 +64,14 @@ public class User {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+	
+	
+	public void userInformation() {
+		System.out.println("")
+	}
+	
+	
+	
+	
 	}
 

@@ -7,6 +7,7 @@ public class User {
 	  private String firstName; // not null
 	  private String lastName; // not null
 	  private String email; // not null
+	  //private userAccount[] = {};
 	  //private Role role;
 	  
 	  public User(String login, String password, String firstName, String lastName, String email) {
@@ -23,7 +24,9 @@ public class User {
 		System.out.println("Email address: " + this.email);
 	}
 	
-	
+	public String updateUserInfo(String... info) {
+		
+	}
 	
 	
 	

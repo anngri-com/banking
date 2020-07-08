@@ -53,9 +53,8 @@ public class Banking {
 		System.out.println("Please, choose from the following options:");
 		System.out.println("1. Account Information");
 		System.out.println("2. Update Personal Information");
-		System.out.println("3. Transfer");
-		System.out.println("4. Deposit");
-		System.out.println("5. Withdrawal");
+		System.out.println("3. Open a Checking Account");
+		System.out.println("4. Open a Credit Account");
 		console.readLine();
 	}
 	
@@ -66,6 +65,12 @@ public class Banking {
 			String option = console.readLine();
 			if(option.equals("1")) {
 				mainUser.userInformation();
+			}
+			if(option.equals("2")) {
+				mainUser.updateUserInfo();
+			}
+			if(option.equals("3")) {
+				
 			}
 		}
 	}

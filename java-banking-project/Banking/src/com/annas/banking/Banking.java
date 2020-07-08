@@ -53,8 +53,8 @@ public class Banking {
 		System.out.println("Please, choose from the following options:");
 		System.out.println("1. Account Information");
 		System.out.println("2. Update Personal Information");
-		System.out.println("3. Open a Checking Account");
-		System.out.println("4. Open a Credit Account");
+		System.out.println("3. Open an Account");
+
 		console.readLine();
 	}
 	
@@ -65,9 +65,19 @@ public class Banking {
 			String option = console.readLine();
 			if(option.equals("1")) {
 				mainUser.userInformation();
+				
 			}
 			if(option.equals("2")) {
-				mainUser.updateUserInfo();
+				String newFirstName = console.readLine("Enter your First Name");
+				mainUser.setFirstName(newFirstName);
+				String newLastName = console.readLine("Enter your Last Name");
+				mainUser.setLastName(newLastName);
+				String newEmail = console.readLine("Enter your Email Address");
+				mainUser.setEmail(newEmail);
+				String newLogIn = console.readLine("Enter your Username");
+				mainUser.setUsername(newLogIn);
+				String newPassword = console.readLine("Enter your password");
+				mainUser.setPassword(newPassword);
 			}
 			if(option.equals("3")) {
 				

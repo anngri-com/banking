@@ -1,5 +1,8 @@
 package com.annas.banking;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class User {
 	  private int userId; // primary key
 	  private String username; // not null, unique
@@ -7,7 +10,7 @@ public class User {
 	  private String firstName; // not null
 	  private String lastName; // not null
 	  private String email; // not null
-	  //private userAccount[] = {};
+	  private List<Account> accounts = new ArrayList<Account>();
 	  //private Role role;
 	  
 	  public User(String login, String password, String firstName, String lastName, String email) {
@@ -24,9 +27,7 @@ public class User {
 		System.out.println("Email address: " + this.email);
 	}
 	
-	public String updateUserInfo(String... info) {
-		
-	}
+	
 	
 	
 	
